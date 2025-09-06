@@ -89,13 +89,19 @@
 ```
 ## Display data
 ```
-/clubs/{clubId}/displays/{displayDeviceId}
-    - content: string
+/clubs/{clubId}/displays/{displayDeviceId}/settings/content
+    - contentType: string
     - contentId: string
+
+/clubs/{clubId}/displays/{displayDeviceId}/settings/global
     - width: number
     - height: number
     - features: array
     - subscriptionEnd: timestamp
+    - primaryColor: string
+    - secondaryColor: string
+    - tertiaryColor: string
+    - backgroundColor: string
 
 /clubs/{clubId}/displays/{displayDeviceId}/drawings/{drawingId}
     - category: string
